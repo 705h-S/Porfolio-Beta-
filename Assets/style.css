@@ -1,0 +1,80 @@
+*{
+   box-sizing: border-box;
+}
+
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #094268;
+}
+/* Changed the styling of header */
+header{
+    padding: 10px;
+    display: flex;
+   flex: 1;
+   justify-content: center;
+}
+
+.head{
+    font-size: 100px;
+    font-family: monospace;
+    font-style: oblique;
+    font-weight: bolder;
+    background-image: url(https://cdn.pixabay.com/photo/2017/02/25/17/38/george-washington-bridge-2098351__480.jpg);
+    background-clip: text; 
+    -webkit-background-clip: text;
+    color: transparent; 
+}
+ 
+/* Nav display */
+nav {
+    display: flex;
+    background-color: #d8a47f;
+    justify-content: center;
+    
+}
+
+nav ul{
+display: flex;
+  justify-content: space-evenly;
+  min-width: 1000px;
+  flex-wrap: wrap;
+  
+}
+
+nav a {
+    color: black;
+    font-family: fantasy;
+    font-size: 20px;
+    padding: 14px 20px;
+    text-decoration: underline;
+   
+}
+/*  Style photos of Joshua */
+.SelfP {
+    display: flex;
+    justify-content: center;
+    padding: 20px 15px;
+    background-color: dimgrey;
+}
+
+.photo{
+    margin: 50px;
+    border-style: solid;
+    border-width: 1px;
+    background-color: darkgray;
+    padding: 10px;
+    flex: 0 0 300px;
+    border-radius: 15px 50px 30px;
+    transform: rotate(15deg);
+    box-shadow: 5px 10px 5px red, 10px 15px 5px blue;
+}
+
+.photo img {
+    border-radius: 15px 50px 30px;
+}
