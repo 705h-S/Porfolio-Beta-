@@ -101,8 +101,7 @@ nav a {
 .display{
     padding: 10px;
     flex: 4;
-  
-  padding: 20px;
+  padding: 10px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -134,4 +133,25 @@ nav a {
     padding: 10px;
     text-decoration: none;
     color: black;
+}
+/* Contact styling  */
+
+.hmu{
+    background-color: whitesmoke;
+    padding: 10px;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+/* footer styling */
+
+footer{
+    background-color: slategrey;
+    font-size: 10px;
+    text-align: center;
+    color: snow;
 }
