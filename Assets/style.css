@@ -77,6 +77,8 @@ nav a {
 
 .photo img {
     border-radius: 15px 50px 30px;
+    width: 250px;
+    height: 300px;
 }
 
 /* About me styling  */
