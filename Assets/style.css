@@ -7,7 +7,7 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 0;
     display: flex;
-    justify-content:flex-start;
+    justify-content:center;
     flex-direction: column;
     min-height: 100vh;
     background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
@@ -181,7 +181,39 @@ footer{
     color: snow;
 }
 
+@media (max-witdth: 1200px){
+
+    body{
+    margin: 0;
+    display: flex;
+    justify-content:center;
+    flex-direction: column;
+    min-height: 90vh;
+    }
+
+    main h1 {
+    font-size: 30px;
+    line-height: 4vh;
+     } 
+}
+
 @media (max-witdth: 900px){
 
- 
+    body{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        display: inline-block;
+        min-height: 80vh;
+        max-width: 900px;
+
+    }
+    main{
+        line-height: 4vh;
+    }
+
+    main h1{
+        font-size: 20px;
+    }
+
 }
