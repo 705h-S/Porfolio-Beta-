@@ -1,5 +1,6 @@
 *{
    box-sizing: border-box;
+   margin: 0px;
 }
 
 
@@ -44,8 +45,8 @@ header{
 }
 
 nav ul{
-display: flex;
-flex: 3;
+  display: flex;
+  flex: 3;
   justify-content: center;
   min-width: 1000px;
   flex-wrap: wrap;
@@ -181,7 +182,7 @@ footer{
     color: snow;
 }
 
-@media (max-witdth: 1200px){
+@media (max-width: 1200px){
 
     body{
     margin: 0;
@@ -197,23 +198,68 @@ footer{
      } 
 }
 
-@media (max-witdth: 900px){
+@media (max-width: 900px){
 
     body{
         display: flex;
         justify-content: center;
         align-content: center;
-        display: inline-block;
+        
         min-height: 80vh;
-        max-width: 900px;
+    
 
     }
-    main{
+    main p {
         line-height: 4vh;
+
     }
 
     main h1{
         font-size: 20px;
     }
 
+}
+
+@media (max-width: 500px){
+
+    .head{
+        text-align: center;
+    }
+
+    body{
+
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-direction: column;
+        min-height: 60vh;
+        background: linear-gradient(0.25turn, #112D9B, #ebf8e1,#61646E);
+    }
+
+    main p{
+        line-height: 3vh;
+        font-size: 15px;
+    }
+
+
+
+    nav a {
+        color: black;
+        font-family: fantasy;
+        font-size: 15px;
+        padding: 14px 20px;
+        text-decoration: underline;
+        display:inline-block;
+    }
+
+
+    .display-main{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .display-main img{
+        width: 400px;
+        height: 250px;
+    }
 }
