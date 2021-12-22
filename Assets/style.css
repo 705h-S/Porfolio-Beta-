@@ -29,7 +29,8 @@ header{
    flex: 1;
    justify-content: var(--justify-align);
 }
-
+/* Makes text have image as background color */
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/background-clip */
 .head{
     font-size: 100px;
     font-family: monospace;
@@ -37,6 +38,7 @@ header{
     font-weight: bolder;
     background-image: url(https://cdn.pixabay.com/photo/2016/11/24/20/48/programming-1857236__480.jpg);
     background-clip: text; 
+    /* -webkit is a webbrowser rendering engine for Safari & chrome w/o it the image doesnt clip to text */
     -webkit-background-clip: text;
     color: transparent; 
 }
@@ -49,9 +51,10 @@ header{
     flex-wrap: wrap;
     
 }
-.dropbtn{
-    visibility: hidden;
-}
+
+/* .dropbtn{
+    visibility: hidden;        wanted a feature where NAV becomes a dropdown menu when media width is 500px max
+} */
 
 nav ul{
   display: var(--Display-Flex);
@@ -79,6 +82,7 @@ nav a {
     background-color: dimgrey;
 }
 
+/* styling of image "card" */
 .photo{
 
     margin: 50px;
@@ -91,7 +95,7 @@ nav a {
     transform: rotate(15deg);
     box-shadow: 5px 10px 5px red, 10px 15px 5px blue;
 }
-
+/* styles actual image  */
 .photo img {
     border-radius: 15px 50px 30px;
     width: 250px;
@@ -99,7 +103,7 @@ nav a {
 }
 
 
-/* About me styling  */
+/* About me section styling  */
 
 .aboutM {
     display: var(--Display-Flex);
@@ -117,7 +121,7 @@ nav a {
     justify-content:space-around
 
 }
-
+/* profile picture atributes  */
 .php {
     border-radius: 50px 50px;
     width: 100px;
@@ -245,7 +249,7 @@ footer{
         /* align-content: center; */
         /* flex-direction: column; */
         
-        background: linear-gradient(0.25turn, #112D9B, #ebf8e1,#61646E);
+        background:linear-gradient(0.25turn, #152C62, #ebf8e1, #3D3A3A); 
     }
 
     main p{
@@ -253,6 +257,23 @@ footer{
         font-size: 15px;
     }
 
+    .store{
+    /* flex: ; */
+    padding: 0px;
+    border-style: solid;
+    border-width: 2px;
+    margin: 0px;
+    background-color:navajowhite;
+    text-align: var(--justify-align);
+    }
+
+   
+    .display .display-main{
+        /* flex: 4; */
+      padding: var(--Paddingten);
+      display: var(--Display-Flex);
+      justify-content:flex-start;
+    }
 
 
     nav a {
@@ -265,10 +286,10 @@ footer{
     }
 
 
-    .display-main{
+    /* .display-main{
         display: flex;
         justify-content: center;
-    }
+    } */
     
     .display-main img{
         width: 400px;
