@@ -1,3 +1,12 @@
+:root {
+
+    --Display-Flex: flex;
+    --Paddingten: 10px;
+    --justify-align: center;
+    
+
+}
+
 *{
    box-sizing: border-box;
    margin: 0px;
@@ -7,18 +16,18 @@
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 0;
-    display: flex;
-    justify-content:center;
+    display: var(--Display-Flex);
+    justify-content: var(--justify-align);
     flex-direction: column;
     min-height: 100vh;
     background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
 }
 /* Changed the styling of header */
 header{
-    padding: 10px;
-    display: flex;
+    padding: var(--Paddingten);
+    display: var(--Display-Flex);
    flex: 1;
-   justify-content: center;
+   justify-content: var(--justify-align);
 }
 
 .head{
@@ -34,9 +43,9 @@ header{
  
 /* Nav display */
 .links {
-    display: flex;
+    display: var(--Display-Flex);
     background-color: #295877;
-    justify-content: center;
+    justify-content: var(--justify-align);
     flex-wrap: wrap;
     
 }
@@ -45,9 +54,9 @@ header{
 }
 
 nav ul{
-  display: flex;
+  display: var(--Display-Flex);
   flex: 3;
-  justify-content: center;
+  justify-content: var(--justify-align);
   min-width: 1000px;
   flex-wrap: wrap;
   
@@ -57,14 +66,14 @@ nav a {
     color: black;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
-    padding: 14px 20px;
+    padding: 15px 20px;
     text-decoration: underline;
    
 }
 /*  Style photos of Joshua */
 .SelfP {
-    display: flex;
-    justify-content: center;
+    display: var(--Display-Flex);
+    justify-content: var(--justify-align);
     flex-wrap: wrap;
     padding: 20px 15px;
     background-color: dimgrey;
@@ -76,7 +85,7 @@ nav a {
     border-style: solid;
     border-width: 1px;
     background-color: darkgray;
-    padding: 10px;
+    padding: var(--Paddingten);
     flex: 0 0 200px;
     border-radius: 15px 50px 30px;
     transform: rotate(15deg);
@@ -93,17 +102,17 @@ nav a {
 /* About me styling  */
 
 .aboutM {
-    display: flex;
-    justify-content: center;
+    display: var(--Display-Flex);
+    justify-content: var(--justify-align);
     font-size: 40px;
     color: black;
 }
 #aboutme p , .php {
     background-color: lavender;
-    padding: 10px;
+    padding: var(--Paddingten);
     line-height: 5vh;
     border-style: solid;
-    display: flex;
+    display: var(--Display-Flex);
     flex-wrap: wrap;
     justify-content:space-around
 
@@ -120,16 +129,15 @@ nav a {
 /* Products styling  */
 
 .display{
-    padding: 10px;
     flex: 4;
-  padding: 10px;
-  display: flex;
+  padding: var(--Paddingten);
+  display: var(--Display-Flex);
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: var(--justify-align);
 }
 .display-main{
-    display: flex;
-    justify-content: center;
+    display: var(--Display-Flex);
+    justify-content: var(--justify-align);
 }
 
 .display-main img{
@@ -138,10 +146,10 @@ nav a {
 }
 
 #products{
-    display: flex;
-    justify-content: center;
+    display: var(--Display-Flex);
+    justify-content: var(--justify-align);
     background-color: lightsteelblue;
-    padding: 10px;
+    padding: var(--Paddingten);
 }
 
 .store{
@@ -151,7 +159,7 @@ nav a {
     border-width: 2px;
     margin: 20px;
     background-color:navajowhite;
-    text-align: center;
+    text-align: var(--justify-align);
 }
 
 .store p{
@@ -164,13 +172,13 @@ nav a {
 
 .hmu{
     background-color: whitesmoke;
-    padding: 10px;
-    text-align: center;
+    padding: var(--Paddingten);
+    text-align: var(--justify-align);
 }
 
 form {
-    display: flex;
-    justify-content: center;
+    display: var(--Display-Flex);
+    justify-content: var(--justify-align);
     flex-direction: column;
 }
 /* footer styling */
@@ -178,7 +186,7 @@ form {
 footer{
     background-color: slategrey;
     font-size: 10px;
-    text-align: center;
+    text-align: var(--justify-align);
     color: snow;
 }
 
@@ -204,7 +212,7 @@ footer{
     .head{
         text-align: center;
     }
-    
+
     body{
         display: flex;
         justify-content: center;
