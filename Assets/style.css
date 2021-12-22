@@ -60,7 +60,7 @@ nav ul{
   display: var(--Display-Flex);
   flex: 3;
   justify-content: var(--justify-align);
-  min-width: 1000px;
+  /* min-width: 1000px; */
   flex-wrap: wrap;
   
 }
@@ -276,23 +276,27 @@ footer{
     }
 
 
-    nav a {
-        color: black;
+    nav ul {
+        color:#295877;
         font-family: Arial, Helvetica, sans-serif;
-        font-size: 10px;
+        font-size: 15px;
         padding: 14px 20px;
         text-decoration: underline;
-        display:inline-block;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        line-height: 3;
     }
 
+   
 
     /* .display-main{
         display: flex;
         justify-content: center;
     } */
     
-    .display-main img{
-        width: 400px;
+    .store img{
+        width: 350px;
         height: 250px;
     }
 }
